@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Index{% endblock %}</title>
+    {% load static %}
+    <!-- Libs -->
+    <link rel="stylesheet" href="{% static 'assets/libs/swiper/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/libs/bootstrap-icons/font/bootstrap-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontello.css' %}">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/theme.min.css' %}">
+</head>
+
+<body>
+    <!-- header -->
+    {% include 'main/header.html' %}
+    <!-- content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <!-- footer -->
+    {% include 'main/footer.html' %}
+    <!-- scripts -->
+    <!-- Libs JS -->
+    <script src="{% static 'assets/libs/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Theme JS -->
+    <script src="{% static 'assets/js/theme.min.js' %}"></script>
+    <script src="{% static 'assets/libs/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendors/swiper.js' %}"></script>
+</body>
+
+</html>

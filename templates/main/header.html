@@ -1,0 +1,212 @@
+{% load static %}
+<!-- header -->
+<header>
+    <div class="bg-light border-bottom fs-6 text-uppercase py-1 py-lg-0">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 py-2">Welcome to <strong>Fixit Digital Repair Store</strong></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-md-flex justify-content-end fw-semibold">
+                        <span class="me-4">
+                            <a href="#">Support</a>
+                        </span>
+                        <span class="me-4">
+                            <a href="#">Locations</a>
+                        </span>
+                        <span class="me-4">
+                            <a href="#">Career</a>
+                        </span>
+                        <span>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#searchModal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="var(--fixit-gray-500)" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- small header -->
+    <div class="py-3">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-3 col-md-3 col-4">
+                    <a href="{% url 'index' %}">
+                        <img src="{% static 'assets/images/Logo/logo.png' %}" alt="logo">
+                    </a>
+                </div>
+                <div class="col-xl-7 offset-xl-2 col-lg-9 col-8">
+                    <div class="row ">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                        <path
+                                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                    </svg>
+                                </div>
+                                <div class="ms-4">
+                                    <div class="mb-0 fs-6 ls-md text-uppercase">Store Time</div>
+                                    <span class="fs-4 fw-semibold">8am-6pm</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-none d-md-block ">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-telephone" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                </div>
+                                <div class="ms-4">
+                                    <div class="mb-0 fs-6 ls-md text-uppercase">Need Help?</div>
+                                    <span class="fs-4 fw-semibold">1-800-1234-567</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex justify-content-end d-none d-xl-block">
+                            <a href="#" class="btn btn-primary">Make An Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-default bg-secondary navbar-dark">
+    <div class="container">
+        <div class="px-2 py-1 p-lg-0 d-flex justify-content-between w-100 w-lg-0">
+            <span class="text-white d-lg-none">Menu</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Home
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'index' %}">Home</a></li>
+                        <li><a class=" dropdown-item" href="#">Home v.2</a></li>
+                        <li><a class=" dropdown-item" href="#">Home v.3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Repair Service
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Service List Icon</a></li>
+                        <li><a class=" dropdown-item" href="#">Service With Image</a></li>
+                        <li><a class=" dropdown-item" href="#">Service With Full Width</a></li>
+                        <li><a class=" dropdown-item" href="#">Service With Sidebar</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        News
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Blog Default</a></li>
+                        <li><a class=" dropdown-item" href="#">Blog Detail</a></li>
+                        <li><a class=" dropdown-item" href="#">Blog Two Column</a></li>
+                        <li><a class=" dropdown-item" href="#">Blog Two Column-Sidebar</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Feature
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Faq's</a></li>
+                        <li><a class=" dropdown-item" href="#">Pricing</a></li>
+                        <li><a class=" dropdown-item" href="#">Frenchise</a></li>
+                        <li><a class=" dropdown-item" href="#">Feedback</a></li>
+                        <li><a class=" dropdown-item" href="#">Team</a></li>
+                        <li><a class=" dropdown-item" href="#">Career</a></li>
+                        <li><a class=" dropdown-item" href="#">404 Error</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Contact
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        <li><a class=" dropdown-item" href="#">Appointment</a></li>
+                        <li class="dropdown-submenu dropend">
+                            <a class="dropdown-item dropdown-toggle" href="#">
+                                Location
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Location</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Single</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Gallery
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Filterable + Zoom</a></li>
+                        <li><a class=" dropdown-item" href="#">4 Column + zoom</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Docs
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Documentation</a></li>
+                        <li><a class="dropdown-item" href="#">Changelog</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form>
+                    <input class="form-control" type="search" placeholder="Search here ......">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
